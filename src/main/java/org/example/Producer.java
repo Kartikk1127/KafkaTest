@@ -35,7 +35,7 @@ public class Producer {
                         System.out.printf("Message sent successfully: Topic=%s, Partition=%d, Offset=%d%n",
                                 metadata.topic(), metadata.partition(), metadata.offset());
                     }
-                }).get(); // Wait for send to complete
+                }).get();
             }
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
